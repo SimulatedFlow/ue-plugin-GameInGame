@@ -1,4 +1,4 @@
-// Copyright 2026 Silvan Teufel / Teufel-Engineering.com All Rights Reserved.
+// Copyright 2026 Simulated Flow All Rights Reserved.
 
 #include "Games/GameInGame2048.h"
 #include "Slate/SGameInGameCanvas.h"

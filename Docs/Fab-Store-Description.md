@@ -67,4 +67,4 @@ lines of code. Style it with your own material in seconds, ship it on desktop, m
 
 ---
 
-*Author: Silvan Teufel — Teufel-Engineering.com · Support: info@teufel-engineering.com*
+*Author: Simulated Flow · Support: simulatedflow@gmail.com*
