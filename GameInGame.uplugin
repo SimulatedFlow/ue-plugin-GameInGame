@@ -1,0 +1,25 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0.0",
+	"EngineVersion": "5.8.0",
+	"FriendlyName": "Game In Game Overlay Framework",
+	"Description": "An independent Slate & UMG overlay containing 5 fully-playable classic arcade games with custom styling and an extensible C++ framework.",
+	"Category": "Code Plugins",
+	"CreatedBy": "Silvan Teufel — Teufel-Engineering.com",
+	"CreatedByURL": "https://teufel-engineering.com",
+	"DocsURL": "https://wiki.teufel-engineering.com/en/GameInGame",
+	"MarketplaceURL": "",
+	"SupportURL": "mailto:info@teufel-engineering.com",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "GameInGame",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
