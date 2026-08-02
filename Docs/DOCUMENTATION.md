@@ -5,7 +5,7 @@
 **Support:** [simulatedflow@gmail.com](mailto:simulatedflow@gmail.com) · **Docs:** https://github.com/SimulatedFlow
 
 An independent Slate & UMG overlay containing **5 fully-playable classic arcade games**
-(Tetris, Snake, Minesweeper, 2048, Breakout) with custom, material-driven styling and an
+(Block Stacker, Snake, Minesweeper, 2048, Breakout) with custom, material-driven styling and an
 extensible C++ framework for adding your own minigames in a few lines of code.
 
 The overlay ticks on real (Slate) time, so the games keep running under game **pause** and
@@ -33,7 +33,7 @@ leaks to the host player character in the background.
 
 ## 1. Features
 
-- **5 complete arcade games** — Tetris, Snake, Minesweeper, 2048 and Breakout, all fully
+- **5 complete arcade games** — Block Stacker, Snake, Minesweeper, 2048 and Breakout, all fully
   playable out of the box.
 - **Pause-proof** — games tick on real Slate time, unaffected by `UGameplayStatics::SetGamePaused`
   or global time dilation.
@@ -130,7 +130,7 @@ Presentation
 Game contract
    IGameInGameMinigameInterface  ← Init / Tick / HandleInput / Render / Reset / GetScore / GetGameName
    UGameInGameMinigameBase       ← convenience UObject base with defaults
-   FGameInGameGrid               ← shared 2D tile-grid helper (Tetris / Snake / Minesweeper / 2048)
+   FGameInGameGrid               ← shared 2D tile-grid helper (Block Stacker / Snake / Minesweeper / 2048)
 
 Persistence
    UGameInGameSaveGame (USaveGame) ← TMap<FString,int32> HighScores
@@ -231,7 +231,7 @@ Methods (BlueprintCallable): `void ShowOverlay()`, `void HideOverlay()`.
 
 ### `FGameInGameGrid`
 Shared 2D tile-grid helper wrapping cell states, color tints and grid→normalized layout
-conversions, used by Tetris, Snake, Minesweeper and 2048.
+conversions, used by Block Stacker, Snake, Minesweeper and 2048.
 
 ---
 
@@ -327,7 +327,7 @@ Sub->RegisterCustomMinigame(NewObject<UMyPong>(Sub));
 
 | Game | Highlights |
 | --- | --- |
-| **Tetris** | 10×20 grid, 7 tetrominoes (I, J, L, O, S, T, Z), rotation with wall-kicks, hard drop, full line clearing, fall speed scaling with score. |
+| **Block Stacker** | 10×20 grid, 7 tetrominoes (I, J, L, O, S, T, Z), rotation with wall-kicks, hard drop, full line clearing, fall speed scaling with score. |
 | **Snake** | Direction queue (prevents self-collision on rapid inputs), safe food spawning, growth, self- and wall-collision fail states. |
 | **Minesweeper** | 8×8 … 12×12 grids, first-click safety (field generated on first click so the first cell is never a mine), flag placement, flood-fill reveal, mine detonation. |
 | **2048** | 4×4 sliding board, merge-on-equal, score updates, new-tile spawn (90% "2" / 10% "4"), game-over detection when no legal move remains. |

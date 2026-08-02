@@ -7,7 +7,8 @@
 #include "GameInGameGrid.h"
 #include "GameInGameTetris.generated.h"
 
-/** Classic Tetris on a 10x20 well with 7 tetrominoes, rotation + wall kicks, hard drop and line clears. */
+/** Block Stacker: a classic falling-block game on a 10x20 well with 7 tetrominoes,
+ *  rotation + wall kicks, hard drop and line clears. */
 UCLASS()
 class GAMEINGAME_API UGameInGameTetris : public UGameInGameMinigameBase
 {
@@ -18,7 +19,14 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	virtual void HandleInput(EGameInGameInput InputType) override;
 	virtual void Render(class SGameInGameCanvas* Canvas) override;
-	virtual FString GetGameName() const override { return TEXT("Tetris"); }
+	// "Block Stacker" statt "Tetris" (02.08.2026). "Tetris" ist eine eingetragene Marke der
+	// Tetris Company; die fallende-Bloecke-*Mechanik* ist frei, der *Name* nicht. Dieser String
+	// erscheint in der Spielauswahl und im HUD, ist also der Produktname im Sinne des Markenrechts.
+	// Die eigenen Docs/RESUBMIT-NOTES.md empfehlen die Umbenennung seit dem 26.07.
+	// Die C++-Klasse heisst weiterhin UGameInGameTetris — ein interner Bezeichner, kein
+	// Produktname. Ihn umzubenennen waere ein Refactoring quer durch die generierten
+	// UHT-Dateien an einem LIVE verkauften Plugin; das steht als eigener Punkt auf der TODO.
+	virtual FString GetGameName() const override { return TEXT("Block Stacker"); }
 
 private:
 	static constexpr int32 GridW = 10;

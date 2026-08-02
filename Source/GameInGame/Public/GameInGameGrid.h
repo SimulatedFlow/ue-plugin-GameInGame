@@ -18,7 +18,7 @@ struct FGameInGameCell
 };
 
 /**
- * Lightweight 2D cell grid shared by Tetris, Snake, Minesweeper and 2048.
+ * Lightweight 2D cell grid shared by Block Stacker, Snake, Minesweeper and 2048.
  * Stores cell state and provides grid-space helpers; the canvas maps grid
  * coordinates to localized Slate pixels at draw time.
  */
