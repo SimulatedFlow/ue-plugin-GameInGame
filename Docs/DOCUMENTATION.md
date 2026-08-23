@@ -1,8 +1,8 @@
 # Game In Game — Overlay Framework · Documentation
 
 **Version:** 1.0.0 · **Engine:** Unreal Engine 5.8.0 · **Category:** Code Plugins
-**Author:** Simulated Flow — [Simulated Flow](https://github.com/SimulatedFlow)
-**Support:** [simulatedflow@gmail.com](mailto:simulatedflow@gmail.com) · **Docs:** https://github.com/SimulatedFlow
+**Author:** Silvan Teufel — [Silvan Teufel](https://github.com/SimulatedFlow)
+**Support:** [teufelsilvan@gmail.com](mailto:teufelsilvan@gmail.com) · **Docs:** https://github.com/SimulatedFlow
 
 An independent Slate & UMG overlay containing **5 fully-playable classic arcade games**
 (Block Stacker, Snake, Minesweeper, 2048, Breakout) with custom, material-driven styling and an
@@ -402,4 +402,4 @@ to use the classes from your own C++.
 
 ---
 
-*© 2026 Simulated Flow. All Rights Reserved.*
+*© 2026 Silvan Teufel. All Rights Reserved.*
