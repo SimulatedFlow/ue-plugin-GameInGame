@@ -59,9 +59,11 @@ leaks to the host player character in the background.
 | Language | C++ (with full Blueprint exposure) |
 | Content | `CanContainContent: true` |
 
-**Target platforms:** The plugin uses only cross-platform modules (`Slate`, `SlateCore`, `UMG`,
-`InputCore`, `Engine`) with no platform-specific or third-party native code, so it targets the
-full desktop, console and mobile range: **Windows, macOS, Linux, iOS, Android**, and consoles.
+**Target platforms:** The `PlatformAllowList` in the `.uplugin` names **`Win64`**, because that
+is the platform this release was built and tested on. The plugin itself uses only cross-platform
+modules (`Slate`, `SlateCore`, `UMG`, `InputCore`, `Engine`) with no platform-specific or
+third-party native code, so adding macOS, Linux, iOS, Android or a console to that list and
+rebuilding is expected to work — it has simply not been verified here.
 Keyboard and gamepad are supported everywhere; touch buttons (`bShowTouchButtons`) are provided
 for touch and mouse-only devices.
 
