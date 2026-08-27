@@ -4,7 +4,7 @@ A high-performance, material-styled Slate & UMG overlay with 5 classic minigames
 
 Supports **Unreal Engine 5.8**. Full C++ source included.
 
-Documentation, free and without an account: <https://wiki.teufel-engineering.com/en/GameInGame/documentation> — installation, quick start and the full API.
+Documentation, free and without an account: <https://github.com/SimulatedFlow/documentation> — installation, quick start and the full API.
 
 The same manual ships with the plugin as `Docs/DOCUMENTATION.md`.
 - **Support:** teufelsilvan@gmail.com
